@@ -35,3 +35,6 @@ htmlcov/
 # --- Editoren ---
 .vscode/
 .idea/
+# --- Project data / outputs ---
+data/
+results/

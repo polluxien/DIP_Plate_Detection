@@ -1,0 +1,30 @@
+[project]
+name = "dip-coding-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "polluxien", email = "bennet@worrmann.de" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.5",
+    "opencv-python>=5.1.0.95",
+    "pytesseract>=0.3.13",
+    "scikit-image>=0.26.0",
+    "scipy>=1.18.1",
+]
+
+[project.scripts]
+dip-coding-project = "dip_coding_project.__main__:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
+]
